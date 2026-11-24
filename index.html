@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>دعوة زفاف حنان و رضوان | قصر السفراء</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Amiri & Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldDeep: '#f5efe4',
+                        emeraldDark: '#fbf8f2',
+                        goldPrimary: '#b88b35',
+                        goldLight: '#8c621e',
+                        goldDark: '#9c7122',
+                        creamBg: '#3b2c1e',
+                    },
+                    fontFamily: {
+                        amiri: ['Amiri', 'serif'],
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f5efe4;
+            color: #3b2c1e;
+            font-family: 'Tajawal', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .zellige-bg {
+            background-color: #f5efe4;
+            background-image: 
+                radial-gradient(circle at 100% 150%, #f5efe4 24%, #ece2d0 25%, #ece2d0 28%, #f5efe4 29%, #f5efe4 36%, #ece2d0 36%, #ece2d0 40%, transparent 40%, transparent),
+                radial-gradient(circle at 0 150%, #f5efe4 24%, #ece2d0 25%, #ece2d0 28%, #f5efe4 29%, #f5efe4 36%, #ece2d0 36%, #ece2d0 40%, transparent 40%, transparent),
+                radial-gradient(circle at 50% 100%, #ece2d0 10%, #f5efe4 11%, #f5efe4 23%, #ece2d0 24%, #ece2d0 30%, #f5efe4 31%, #f5efe4 43%, #ece2d0 44%, #ece2d0 50%, #f5efe4 51%, #f5efe4 63%, #ece2d0 64%, #ece2d0 71%, transparent 71%, transparent);
+            background-size: 80px 40px;
+        }
+
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #c99a3e 0%, #9e7221 55%, #755011 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-card {
+            border: 2px solid rgba(184, 139, 53, 0.55);
+            box-shadow: 0 15px 35px rgba(86, 62, 32, 0.12), inset 0 0 20px rgba(184, 139, 53, 0.08);
+            background: linear-gradient(180deg, rgba(255, 253, 248, 0.97) 0%, rgba(250, 244, 232, 0.99) 100%);
+        }
+
+        .moroccan-arch {
+            border-radius: 180px 180px 24px 24px;
+            border: 3px double rgba(184, 139, 53, 0.65);
+        }
+
+        .gold-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 1.5rem 0;
+        }
+        .gold-divider::before,
+        .gold-divider::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: linear-gradient(90deg, transparent, rgba(184, 139, 53, 0.65), transparent);
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="zellige-bg min-h-screen flex flex-col items-center justify-between selection:bg-goldPrimary selection:text-white">
+
+    <!-- شريط تحميل الدعوة -->
+    <div class="w-full bg-emeraldDark/95 backdrop-blur-md border-b border-goldPrimary/35 sticky top-0 z-40 px-4 py-3 shadow-sm">
+        <div class="max-w-4xl mx-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2 text-creamBg text-sm font-cairo font-semibold">
+                <i class="fa-solid fa-crown text-goldPrimary"></i>
+                <span>دعوة زفاف حنان &amp; رضوان</span>
+            </div>
+            <button type="button" onclick="downloadInvitation()" class="text-xs sm:text-sm bg-goldPrimary hover:bg-goldDark text-white font-bold px-4 py-1.5 rounded-full transition flex items-center gap-2 shadow-sm cursor-pointer">
+                <i class="fa-solid fa-download"></i>
+                <span>Télécharger</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي للدعوة -->
+    <main class="w-full max-w-3xl mx-auto px-4 py-8 sm:py-12 space-y-8">
+
+        <!-- البطاقة الرئيسية -->
+        <section class="gold-border-card moroccan-arch p-6 sm:p-12 text-center relative overflow-hidden">
+            
+            <!-- زخارف الزوايا -->
+            <div class="absolute top-6 right-6 text-goldPrimary/35 text-2xl pointer-events-none">
+                <i class="fa-solid fa-star-and-crescent"></i>
+            </div>
+            <div class="absolute top-6 left-6 text-goldPrimary/35 text-2xl pointer-events-none">
+                <i class="fa-solid fa-star-and-crescent"></i>
+            </div>
+
+            <!-- البسملة والآية -->
+            <div class="mt-4 sm:mt-6 space-y-3">
+                <p class="font-amiri text-goldLight text-xl sm:text-2xl tracking-wide font-bold">
+                    بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+                </p>
+                <p class="font-amiri text-creamBg/90 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                    ﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾
+                </p>
+            </div>
+
+            <!-- بطاقة الترحيب الخاصة بالضيف -->
+            <div class="mt-7 mb-4 bg-emeraldDeep border border-goldPrimary/50 rounded-2xl p-4 sm:p-5 max-w-lg mx-auto shadow-inner relative">
+                <div class="flex items-center justify-center gap-2 text-goldPrimary text-sm font-cairo font-semibold mb-1">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <span>دعوة خاصة</span>
+                </div>
+                <p class="text-creamBg/85 text-base sm:text-lg font-tajawal">
+                    مرحباً بكم وتشرفنا حضوركم
+                </p>
+                <div class="mt-2 pt-2 border-t border-goldPrimary/25">
+                    <span id="display-guest-name" class="font-amiri text-2xl sm:text-3xl font-bold gold-text-gradient block">
+الإخوة الأعزاء حمزة داد ،عبد الكريم داد ويوسف داد
+                    </span>
+                </div>
+            </div>
+
+            <div class="gold-divider">
+                <i class="fa-solid fa-diamond text-goldPrimary text-xs"></i>
+                <i class="fa-solid fa-heart text-goldPrimary text-sm"></i>
+                <i class="fa-solid fa-diamond text-goldPrimary text-xs"></i>
+            </div>
+
+            <!-- أسماء العروسين -->
+            <div class="py-2 sm:py-4">
+                <p class="text-goldLight font-cairo text-sm sm:text-base mb-4 font-semibold">
+                    تتشرف عائلتا العروسين بدعوتكم لحضور حفل زفاف
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 my-2">
+                    <h1 id="display-bride" class="font-amiri text-5xl sm:text-7xl font-bold gold-text-gradient py-2 animate-float">
+                        حنان
+                    </h1>
+                    <span class="font-amiri text-3xl sm:text-4xl text-goldPrimary bg-emeraldDark w-12 h-12 rounded-full flex items-center justify-center border border-goldPrimary/50 shadow-sm">
+                        &amp;
+                    </span>
+                    <h1 id="display-groom" class="font-amiri text-5xl sm:text-7xl font-bold gold-text-gradient py-2 animate-float">
+                        رضوان
+                    </h1>
+                </div>
+            </div>
+
+            <!-- عبارة ترحيبية مغربية -->
+            <div class="bg-emeraldDeep/90 border border-goldPrimary/40 rounded-2xl p-5 sm:p-6 my-7 max-w-xl mx-auto">
+                <p id="display-message" class="font-amiri text-lg sm:text-xl text-creamBg leading-loose">
+                    "بكل فرح وسرور، نتشرف بدعوتكم لمشاركتنا فرحة العمر في ليلة من ليالي ألف ليلة وليلة، حضوركم يزيد ليلتنا بهجة ونوراً."
+                </p>
+            </div>
+
+            <!-- التاريخ واليوم والساعة -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-lg mx-auto my-7 bg-emeraldDeep border border-goldPrimary/45 rounded-2xl p-4 shadow-inner">
+                <div class="flex flex-col items-center justify-center border-l border-goldPrimary/30 pl-2">
+                    <span class="text-xs text-goldLight font-cairo font-semibold">اليوم</span>
+                    <span id="display-day" class="text-lg sm:text-xl font-bold text-goldPrimary font-cairo mt-1">الجمعة</span>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <span class="text-xs text-goldLight font-cairo font-semibold">التاريخ</span>
+                    <span id="display-date-text" class="text-lg sm:text-xl font-bold text-creamBg font-cairo mt-1">1 يناير 2027</span>
+                </div>
+                <div class="flex flex-col items-center justify-center border-r border-goldPrimary/30 pr-2">
+                    <span class="text-xs text-goldLight font-cairo font-semibold">الساعة</span>
+                    <span id="display-time" class="text-lg sm:text-xl font-bold text-goldPrimary font-cairo mt-1">20:00 مساءً</span>
+                </div>
+            </div>
+
+            <!-- العد التنازلي -->
+            <div class="mt-8">
+                <p class="text-goldLight font-cairo text-sm sm:text-base mb-4 flex items-center justify-center gap-2 font-semibold">
+                    <i class="fa-regular fa-clock text-goldPrimary"></i>
+                    <span>الوقت المتبقي لليلة العمر</span>
+                </p>
+                
+                <div id="countdown-container" class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
+                    <div class="bg-emeraldDark border border-goldPrimary/50 rounded-xl p-3 shadow-sm">
+                        <span id="cd-days" class="block text-2xl sm:text-4xl font-bold text-goldPrimary font-cairo">00</span>
+                        <span class="text-xs text-creamBg/75">يوم</span>
+                    </div>
+                    <div class="bg-emeraldDark border border-goldPrimary/50 rounded-xl p-3 shadow-sm">
+                        <span id="cd-hours" class="block text-2xl sm:text-4xl font-bold text-goldPrimary font-cairo">00</span>
+                        <span class="text-xs text-creamBg/75">ساعة</span>
+                    </div>
+                    <div class="bg-emeraldDark border border-goldPrimary/50 rounded-xl p-3 shadow-sm">
+                        <span id="cd-minutes" class="block text-2xl sm:text-4xl font-bold text-goldPrimary font-cairo">00</span>
+                        <span class="text-xs text-creamBg/75">دقيقة</span>
+                    </div>
+                    <div class="bg-emeraldDark border border-goldPrimary/50 rounded-xl p-3 shadow-sm">
+                        <span id="cd-seconds" class="block text-2xl sm:text-4xl font-bold text-creamBg font-cairo">00</span>
+                        <span class="text-xs text-creamBg/75">ثانية</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- قسم المكان والموقع -->
+        <section class="gold-border-card rounded-3xl p-6 sm:p-10 text-center relative z-10">
+            <div class="w-14 h-14 bg-goldPrimary/15 border border-goldPrimary rounded-full flex items-center justify-center mx-auto mb-4 text-goldPrimary text-2xl">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            
+            <h2 class="font-amiri text-3xl sm:text-4xl font-bold gold-text-gradient mb-2">
+                مكان الحفل
+            </h2>
+            
+            <p id="display-venue" class="text-xl sm:text-2xl font-bold text-creamBg font-cairo mt-3">
+                قاعة الأفراح والمناسبات قصر السفراء (Palais des Ambassadeurs)
+            </p>
+            
+            <p id="display-address" class="text-goldLight text-sm sm:text-base mt-2 max-w-md mx-auto">
+                طريق الجديدة، ليساسفة، الدار البيضاء
+            </p>
+
+            <!-- خريطة الموقع -->
+            <div class="mt-6 rounded-2xl overflow-hidden border border-goldPrimary/40 shadow-sm max-w-xl mx-auto h-64">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Palais%20des%20Ambassadeurs%20Casablanca&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="mt-6 relative z-20">
+                <a id="display-map-link"
+                   href="https://www.google.com/maps/search/?api=1&query=Palais+des+Ambassadeurs+Casablanca"
+                   target="_top"
+                   class="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-goldDark via-goldPrimary to-goldDark text-white font-bold font-cairo px-7 py-3.5 rounded-full shadow-md active:scale-95 transition transform cursor-pointer select-none">
+                    <i class="fa-solid fa-map-location-dot text-lg"></i>
+                    <span>فتح الموقع في خرائط جوجل (Google Maps)</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="w-full py-6 text-center text-creamBg/70 text-xs sm:text-sm border-t border-goldPrimary/30 bg-emeraldDark/95">
+        <p class="font-amiri text-base text-goldLight font-bold mb-1">دامت الأفراح في دياركم عامرة</p>
+        <p>حنان &amp; رضوان • قصر السفراء - الدار البيضاء</p>
+    </footer>
+
+    <script>
+        const weddingData = {
+            guestName: 'الإخوة الأعزاء حمزة داد ،عبد الكريم داد ويوسف داد',
+            bride: 'حنان',
+            groom: 'رضوان',
+            day: 'الجمعة',
+            dateText: '1 يناير 2027',
+            time: '20:00 مساءً',
+            countdownDate: '2027-01-01T20:00',
+            venue: 'قاعة الأفراح والمناسبات قصر السفراء (Palais des Ambassadeurs)',
+            address: 'طريق الجديدة، ليساسفة، الدار البيضاء',
+            message: '"بكل فرح وسرور، نتشرف بدعوتكم لمشاركتنا فرحة العمر في ليلة من ليالي ألف ليلة وليلة، حضوركم يزيد ليلتنا بهجة ونوراً."'
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const guestFromUrl = urlParams.get('guest');
+        if (guestFromUrl && guestFromUrl.trim() !== '') {
+            weddingData.guestName = guestFromUrl.trim();
+        }
+
+        function renderWeddingDetails() {
+            document.getElementById('display-guest-name').textContent = weddingData.guestName;
+            document.getElementById('display-bride').textContent = weddingData.bride;
+            document.getElementById('display-groom').textContent = weddingData.groom;
+            document.getElementById('display-day').textContent = weddingData.day;
+            document.getElementById('display-date-text').textContent = weddingData.dateText;
+            document.getElementById('display-time').textContent = weddingData.time;
+            document.getElementById('display-venue').textContent = weddingData.venue;
+            document.getElementById('display-address').textContent = weddingData.address;
+            document.getElementById('display-message').textContent = weddingData.message;
+        }
+
+        function updateCountdown() {
+            const targetDate = new Date(weddingData.countdownDate).getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown-container').innerHTML = `
+                    <div class="col-span-4 bg-emeraldDeep border border-goldPrimary rounded-xl p-4 text-goldPrimary font-amiri text-2xl">
+                        ألف مبروك للعروسين حنان و رضوان!
+                    </div>
+                `;
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        function downloadInvitation() {
+            const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            const safeGuest = weddingData.guestName.replace(/[^\p{L}\p{N}\s-]/gu, '').trim().replace(/\s+/g, '_');
+            a.href = url;
+            a.download = `invitation-${safeGuest || 'hanan-redouan'}.html`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        renderWeddingDetails();
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
